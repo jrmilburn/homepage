@@ -144,8 +144,9 @@ header {
 .project-grid {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-rows: 1fr 1fr;
+    justify-items: center;
 
 }
 
@@ -163,6 +164,8 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr 1fr 1fr;
     align-items: center;
+
+    max-width: 250px;
 
 }
 
@@ -217,9 +220,6 @@ header {
 
 }
 
-.contact-me {
-
-}
 
 .mail,
 .phone {
@@ -231,5 +231,62 @@ header {
 .footer-container img {
 
     height: 300px;
+
+}
+
+/*Tablet*/
+
+@media (max-width: 1000px) {
+
+    header {
+
+        padding: 8rem 0 0 0;
+
+    }
+
+    .about {
+
+        min-width: 300px;
+        max-width: 400px;
+        padding: 2rem;
+        font-size: 12px;
+        transform: translate(-25%, 50%);
+
+    }
+
+    .about h2 {
+
+        text-align: right;
+
+    }
+
+    .picture-overlay {
+
+        font-size: 2rem;
+        top: 0%;
+        right: 0%;
+        transform: translate(20%, 50%);
+
+
+    }
+
+    .img-container {
+
+        transform: translate(20%, -20%);
+        z-index: 99;
+
+    }
+
+    .img-container img {
+
+        height: 300px;
+
+    }
+
+    main {
+
+        margin-top: 4rem;
+
+    }
 
 }
