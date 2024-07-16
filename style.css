@@ -29,9 +29,11 @@ svg {
 
 button {
 
+    position: relative;
     background: none;
     border: none;
     padding: 0.25rem;
+    z-index: 200;
 
 }
 
@@ -231,12 +233,13 @@ header {
 .footer-container img {
 
     height: 300px;
+    border-radius: 0.25rem;
 
 }
 
 /*Tablet*/
 
-@media (max-width: 1000px) {
+@media ((min-width:600px) and (max-width: 1000px)) {
 
     header {
 
@@ -251,6 +254,8 @@ header {
         padding: 2rem;
         font-size: 12px;
         transform: translate(-25%, 50%);
+
+        z-index: 1;
 
     }
 
@@ -286,6 +291,65 @@ header {
     main {
 
         margin-top: 4rem;
+
+    }
+
+    footer img {
+
+        width: 200px;
+        object-fit: cover;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .main-container {
+
+        width: 100%;
+        padding: 0 2rem;
+        margin: 1rem;
+
+    }
+
+    .footer-container {
+
+        width: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer img {
+
+        width: 100%;
+
+    }
+
+    .picture-overlay {
+
+        transform: translate(0%, 0%);
+        left: 0;
+
+    }
+
+    .about {
+
+        padding: 2rem;
+        margin: 3rem 2rem 2rem 2rem;
+
+        transform: translateX(0);
+
 
     }
 
